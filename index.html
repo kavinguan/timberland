@@ -7,7 +7,36 @@
 	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	  <script type="text/javascript" charset="utf-8" src="phonegap-1.3.0.js"></script>
 	  <script type="text/javascript" charset="utf-8" src="main.js"></script>
+<script type="text/javascript" charset="utf-8">
 
+// 等待加载PhoneGap
+document.addEventListener("deviceready", onDeviceReady, false); 
+
+// PhoneGap加载完毕
+function onDeviceReady() {
+   	// 空
+}
+
+// 显示一个定制的警告框
+function showAlert() {
+   	navigator.notification.alert(
+	   	'You are the winner!',  // 显示信息
+	   	'Game Over',            // 标题
+	   	'Done'                  // 按钮名称
+   	);
+}
+
+// 蜂鸣三次
+function playBeep() {
+   	navigator.notification.beep(3);
+}
+
+// 震动两秒
+function vibrate() {
+   	navigator.notification.vibrate(2000);
+}
+
+</script>
   </head>
   <body onload="init();" id="stage" class="theme">
     <h1>Welcome to PhoneGap!</h1>
@@ -31,6 +60,9 @@
     <a href="#" class="btn large" onclick="show_pic();">Get a Picture</a>
     <a href="#" class="btn large" onclick="get_contacts();">Get Phone's Contacts</a>
     <a href="#" class="btn large" onclick="check_network();">Check Network</a>
+		<p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>
+	<p><a href="#" onclick="playBeep(); return false;">Play Beep</a></p>
+	<p><a href="#" onclick="vibrate(); return false;">Vibrate</a></p>
     <div id="viewport" class="viewport" style="display: none;">
       <img style="width:60px;height:60px" id="test_img" src="" />
     </div>
