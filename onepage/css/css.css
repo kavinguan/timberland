@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td { margin:0; padding:0;}
+body,input,textarea { font-size:12px; font-family:"Arial","SimSun";}
+body { text-align:center; color:#666464; line-height:18px; background:#e5e5e5;}
+ul,ol,li { list-style-type:none;}
+table{ border-collapse:collapse; border-spacing:0;}
+img { border:0;}
+input,button,select,textarea { outline:none;}
+textarea { resize:none;}
+a { outline:none; blr:expression(this.onFocus=this.blur());}
+a{ color:#666464; text-decoration:none;}
+a:hover{ color:#2d66ad; text-decoration:underline;}
+
+.left { float:left;}
+.right { float:right;}
+.none { display:none;}
+.block { display:block;}
+.hidden1 { width:29px; height:25px; opacity:0;}
+
+.top_wrap { width:100%; height:34px; background:url(../images/top_bg.gif) center top repeat-x;}
+.top { width:1000px; height:34px; margin:0 auto;}
+.top .logo { float:left; margin-left:60px; display:inline;}
+.top .city { float:right; margin-right:44px; display:inline;}
+.top .next { float:right; margin-right:24px; display:inline;}
+.wrap { width:952px; padding:0 24px; margin:0 auto; text-align:left; overflow:hidden; _overflow:none;}
+.wrap .banner { width:952px; height:506px; overflow:hidden;}
+.wrap .info { width:952px; height:286px; margin-top:10px; background:#f5a100;}
+.wrap .info .info_l { float:left; width:400px; height:286px;}
+.wrap .info .info_r { float:right; width:552px; height:286px;}
+.wrap .info .jiangpin { float:left; width:910px; height:240px; padding-left:22px;}
+.wrap .info .jiangpin_title { float:left; width:886px; height:32px; border-bottom:1px solid #fff;}
+.wrap .info .jiangpin_pic { float:left; width:910px; padding-top:8px;}
+.wrap .info .jiangpin_pic img { float:left; margin-right:46px; display:inline;}
+.wrap .info .jiangpin_pic .img_last { margin-right:0;}
+.wrap .info .btn_join { margin-left:80px; cursor:pointer;}
+.wrap .info .fabiao { width:605px; height:116px; background:url(../images/textarea_bg.jpg) left top no-repeat;}
+.wrap .info .fabiao .filename { display:inline-block; vertical-align:middle; height:28px; margin:10px 0 0 10px; line-height:28px; width:200px; overflow:hidden;}
+.wrap .info .fabiao textarea { width:570px; height:40px; border:0; margin:30px 0 0 20px; overflow-y:auto; color:#164c5b;}
+.wrap .info .fabiao #form { position:relative;}
+.wrap .info .fabiao .uma_upload_image { width: 60px; height: 25px; margin: 10px 0 0 90px; position: absolute; top:0; left:0; opacity:0; cursor:pointer;}
+.wrap .info .fabiao .hidden { width:0; height:0; opacity:0; overflow:hidden;}
+.wrap .info .btn_upload,.wrap .info .btn_up { margin:10px 0 0 22px;}
+.wrap .info .btn_fabu { float:right; margin:10px 10px 0 0; cursor:pointer;}
+.wrap .info .fabiao img,.wrap .pics .p_bottom img { vertical-align:middle;}
+
+.wrap .pics { width:950px;}
+.wrap .pics .p_top { float:left; width:934px; padding:26px 0 20px 0; margin:0 8px; text-indent:20px; border-bottom:1px solid #4192a9; color:#174956; font-size:14px;}
+.wrap .pics .p_top li { float:left; width:104px; height:14px; background:url(../images/nav1.gif) center top no-repeat; cursor:pointer;}
+.wrap .pics .p_top .li2 { width:62px; background-image:url(../images/nav2.gif);}
+.wrap .pics .p_top .active { background-position:center bottom;}
+.wrap .pics .p_bottom { float:left; width:934px; padding:8px 0 32px 0; margin:0 8px; border-top:1px solid #4192a9; text-align:center;}
+.wrap .pics .ul { float:left; width:950px; padding-bottom:15px;}
+.wrap .pics .ul li { float:left; width:220px; background:#fefefe; margin:15px 9px 0 8px; display:inline;}
+.wrap .pics .ul li .img { width:192px; margin:14px 0 0 14px; cursor:pointer;}
+.wrap .pics .ul li .picname { display:inline-block; padding:8px 14px 8px 14px; width:192px;}
+.wrap .pics .ul li .btns { display:inline-block; padding:8px 0; width:100%; background:#fafafa; border-top:1px solid #ebebeb; border-bottom:1px solid #e0dedd;}
+.wrap .pics .ul li .face { float:left; width:30px; height:30px; margin-left:14px; display:inline;}
+.wrap .pics .ul li .name { float:left; height:30px; padding-left:8px; width:90px; line-height:14px;}
+.wrap .pics .ul li .btn_zf,.wrap .pics .ul li .btn_pl { float:right; margin-right:14px; display:inline; cursor:pointer; text-align:center;}
+
+.mask { width:100%; height:100%; position:absolute; z-index:1000; top:0; left:0; background:#fff; opacity:0.8; filter:alpha(opacity=80); display:none;}
+.fayan { width:620px; height:310px; background:url(../images/fayan_bg.png) left top no-repeat; position:fixed; _position:absolute; z-index:1001; top:50%; left:50%; margin-top:-155px; margin-left:-310px; display:none;}
+.fayan .fayan_title { float:left; width:620px; height:64px; color:#164c5b; font-size:22px; font-weight:bold; line-height:64px; text-align:left; text-indent:42px;}
+.fayan .btn_close { float:right; width:64px; height:64px; background:url(../images/btn_close.gif) center center no-repeat; cursor:pointer;}
+.fayan .fayan_pic { float:left; width:170px; height:170px; margin:36px 0 0 36px; display:inline; overflow:hidden;}
+.fayan .fayan_pic img { width:100%;}
+.fayan .textarea { float:left; width:335px; height:100px; border:0; margin:42px 0 0 34px; display:inline; color:#164c5b;}
+.fayan .btn_fayan { float:left; margin:20px 0 0 286px; cursor:pointer;}
+
+.bigpic { width:100%; height:100%; position:fixed; z-index:1002; top:0; left:0; display:none;}
+.bigpic div { width:100%; height:100%; display:table-cell; vertical-align:middle; text-align:center;}
+
+
